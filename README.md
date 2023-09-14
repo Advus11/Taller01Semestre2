@@ -10,7 +10,7 @@
 # la septima clase sera Baloncesto, esta hereda de Deporte y tiene atributos extras como tipoCancha(interio o exterior) y numTiempoJugado.
 # la octava clase sera Tenis, esta hereda de Deporte y tiene atributos extras como tipoSuperficio(cesped, arcilla o dura) y tipoPartido(individual o dobles).
 # Entre las principales funcionalidades encontramos: 
-# ya con las clases creadas, agrega una nueva clase llamada GestorClubDeportivo, en ella habrán metodos como registrarDeportista,
+# se agrega una nueva clase llamada GestorClubDeportivo, en ella habrán metodos como registrarDeportista,
 # registrarEntrenador (ambos tienen validación por correoElectronico, es decir, no se repite el correo), un metodo crearEquipo (en el que se les asigna jugadores y entrenadores),
 # metodo registrarPartido, metodo estadisticasJugador (con el correoElectronico) y metodo estadisticasEquipo (con el entrenador).
 # metodo para mostrar todos los deportistas que hayan sido agregados
