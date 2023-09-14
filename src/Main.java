@@ -38,5 +38,8 @@ public class Main {
 
         // Estadísticas de equipo
         gestor.estadisticasEquipo("Equipo1");
+
+        // Mostrar todos los deportistas
+        gestor.mostrarTodosDeportistas();
     }
 }

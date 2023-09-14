@@ -60,6 +60,20 @@ public class GestorClubDeportivo {
         System.out.println("No se encontró un equipo con el nombre proporcionado.");
     }
 
+    public void mostrarTodosDeportistas() {
+        System.out.println("Lista de todos los deportistas:");
+        for (Deportista deportista : deportistas) {
+            System.out.println("Nombre: " + deportista.getNombre());
+            System.out.println("Apellido: " + deportista.getApellido());
+            System.out.println("Correo: " + deportista.getCorreoElectronico());
+            System.out.println("Número de contacto: " + deportista.getNumeroContacto());
+            System.out.println("Tipo de deporte: " + deportista.getTipoDeporte());
+            System.out.println("Posición: " + deportista.getPosicion());
+            System.out.println();
+        }
+    }
+
+
 
     private boolean existeCorreoElectronico(String correoElectronico) {
         for (Deportista deportista : deportistas) {
