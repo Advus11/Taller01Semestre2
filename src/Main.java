@@ -6,7 +6,7 @@ public class Main {
         GestorClubDeportivo gestor = new GestorClubDeportivo();
 
         // Crear deportistas y entrenadores
-        Deportista deportista1 = new Deportista("Adonis", "Subiabre", "correo1@example.com", "123456789", "Fútbol", "Delantero");
+        Deportista deportista1 = new Deportista("Adoniss", "Subiabre", "correo1@example.com", "123456789", "Fútbol", "Delantero");
         Deportista deportista2 = new Deportista("Ana", "Perez", "correo2@example.com", "987654321", "Baloncesto", "Base");
         Entrenador entrenador1 = new Entrenador("Marcelo", "Bielsa", "entrenador1@example.com", "555555555", "Fútbol", "Entrenador", 10, "Táctica");
 
