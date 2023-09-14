@@ -6,9 +6,9 @@ public class Main {
         GestorClubDeportivo gestor = new GestorClubDeportivo();
 
         // Crear deportistas y entrenadores
-        Deportista deportista1 = new Deportista("Nombre1", "Apellido1", "correo1@example.com", "123456789", "Fútbol", "Delantero");
-        Deportista deportista2 = new Deportista("Nombre2", "Apellido2", "correo2@example.com", "987654321", "Baloncesto", "Base");
-        Entrenador entrenador1 = new Entrenador("Entrenador1", "Apellido1", "entrenador1@example.com", "555555555", "Fútbol", "Entrenador", 10, "Táctica");
+        Deportista deportista1 = new Deportista("Adonis", "Subiabre", "correo1@example.com", "123456789", "Fútbol", "Delantero");
+        Deportista deportista2 = new Deportista("Ana", "Perez", "correo2@example.com", "987654321", "Baloncesto", "Base");
+        Entrenador entrenador1 = new Entrenador("Marcelo", "Bielsa", "entrenador1@example.com", "555555555", "Fútbol", "Entrenador", 10, "Táctica");
 
         // Registrar deportistas y entrenadores
         boolean registrado1 = gestor.registrarDeportista(deportista1);
