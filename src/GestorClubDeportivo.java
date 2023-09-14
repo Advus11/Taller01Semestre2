@@ -15,7 +15,6 @@ public class GestorClubDeportivo {
     }
 
     public boolean registrarDeportista(Deportista deportista) {
-        // Validar que el correoElectronico no esté repetido
         if (!existeCorreoElectronico(deportista.getCorreoElectronico())) {
             deportistas.add(deportista);
             return true;
@@ -24,7 +23,6 @@ public class GestorClubDeportivo {
     }
 
     public boolean registrarEntrenador(Entrenador entrenador) {
-        // Validar que el correoElectronico no esté repetido
         if (!existeCorreoElectronico(entrenador.getCorreoElectronico())) {
             entrenadores.add(entrenador);
             return true;
@@ -33,7 +31,6 @@ public class GestorClubDeportivo {
     }
 
     public void crearEquipo(Equipo equipo, List<Deportista> jugadores, Entrenador entrenador) {
-        // Asignar jugadores y entrenador al equipo
         equipo.setJugadores(jugadores);
         equipo.setEntrenador(entrenador);
         equipos.add(equipo);
@@ -46,26 +43,23 @@ public class GestorClubDeportivo {
     public void estadisticasJugador(String correoElectronico) {
         for (Deportista deportista : deportistas) {
             if (deportista.getCorreoElectronico().equals(correoElectronico)) {
-                // Mostrar estadísticas del jugador
-                // Implementa la lógica según tus necesidades
-                System.out.println("Estadísticas del jugador: " + deportista.getNombre() + " " + deportista.getApellido());
+                System.out.println("Estadísticas del jugador: " + deportista.getNombre() + " " + deportista.getApellido() + " " + deportista.getPosicion() + " " + deportista.getTipoDeporte() + " " + deportista.getNumeroContacto() + " " + deportista.getCorreoElectronico());
                 return;
             }
         }
         System.out.println("No se encontró un jugador con el correo electrónico proporcionado.");
     }
 
-    public void estadisticasEquipo(String correoEntrenador) {
-        for (Entrenador entrenador : entrenadores) {
-            if (entrenador.getCorreoElectronico().equals(correoEntrenador)) {
-                // Mostrar estadísticas del equipo del entrenador
-                // Implementa la lógica según tus necesidades
-                System.out.println("Estadísticas del equipo del entrenador: " + entrenador.getNombre() + " " + entrenador.getApellido());
+    public void estadisticasEquipo(String nombreEquipo) {
+        for (Equipo equipo : equipos) {
+            if (equipo.getNombre().equals(nombreEquipo)) {
+                System.out.println("Estadísticas del equipo: " + equipo.getNombre() + " " + equipo.getEntrenador() + " " + equipo.getJugadores());
                 return;
             }
         }
-        System.out.println("No se encontró un entrenador con el correo electrónico proporcionado.");
+        System.out.println("No se encontró un equipo con el nombre proporcionado.");
     }
+
 
     private boolean existeCorreoElectronico(String correoElectronico) {
         for (Deportista deportista : deportistas) {

@@ -19,5 +19,14 @@ public class Equipo {
     public void setEntrenador(Entrenador entrenador) {
         this.entrenador = entrenador;
     }
+    public String getNombre() {
+        return nombre;
+    }
+    public String getEntrenador() {
+        return entrenador.getNombre() + " " + entrenador.getApellido();
+    }
+    public List<Deportista> getJugadores() {
+        return jugadores;
+    }
 
 }

@@ -24,5 +24,14 @@ public class Deportista {
     public String getCorreoElectronico() {
         return correoElectronico;
     }
+    public String getNumeroContacto() {
+        return numeroContacto;
+    }
+    public String getTipoDeporte() {
+        return tipoDeporte;
+    }
+    public String getPosicion() {
+        return posicion;
+    }
 
 }
