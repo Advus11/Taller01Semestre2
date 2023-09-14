@@ -15,4 +15,14 @@ public class Deportista {
         this.posicion = posicion;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+    public String getApellido() {
+        return apellido;
+    }
+    public String getCorreoElectronico() {
+        return correoElectronico;
+    }
+
 }

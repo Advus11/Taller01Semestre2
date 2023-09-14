@@ -12,5 +12,12 @@ public class Equipo {
         this.entrenador = entrenador;
         this.historialPartidos = new ArrayList<>();
     }
+    public void setJugadores(List<Deportista> jugadores) {
+        this.jugadores = jugadores;
+    }
+
+    public void setEntrenador(Entrenador entrenador) {
+        this.entrenador = entrenador;
+    }
 
 }
